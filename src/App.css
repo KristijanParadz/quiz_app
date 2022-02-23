@@ -1,38 +1,114 @@
-.App {
+body,html{
+  margin:0;
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;
+  background-color: rgb(207, 204, 204);
+
+
+}
+
+.background{
+  height: 100vh;
+  width:100vw;
+}
+
+.category{
+  margin:15px;
+}
+
+.text{
+  margin-bottom: 7px;
+  color:gray
+}
+
+.number-of-questions{
+  margin:15px 20px;
+}
+
+.header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(133, 128, 128) ;
+}
+
+button{
+  padding:10px 15px;
+  border-radius: 5px;
+  background-color:rgb(44, 194, 231);
+  color:rgb(253, 253, 253);
+  border: 0;
+  cursor:pointer;
+  align-self: flex-end;
+  margin-bottom: 15px;
+}
+
+.question-section{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  position: absolute;
+
+}
+
+.pitanje{
+  background-color: whitesmoke;
+  margin:20px;
+  padding:25px;
+  padding-bottom:10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px gray ;
+  
+}
+
+.pitanje-text{
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.odgovori{
+  display:flex;
+  flex-direction: column;
+  cursor:pointer;
+  color:gray;
+  
+}
+
+/*.crta{
+  height:2px;
+  background-color: rgb(109, 104, 104);
+}*/
+
+span{
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding:5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+span:hover{
+  background-color:bisque;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+  height:22px;
+  border: 1px solid rgb(178, 180, 212);
+  border-radius: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+select{
+  height:25px;
+  border: 1px solid rgb(178, 180, 212);
+  border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.correct{
+  background-color: chartreuse;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.correct:hover{
+  background-color: chartreuse;
 }
